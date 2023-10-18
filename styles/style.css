@@ -1,0 +1,118 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(../img/wallpaper.avif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* Estilos para o cabeçalho (navbar) */
+
+
+nav.slick-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 12px;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+
+nav.slick-carousel a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+nav.slick-carousel a:hover {
+    background-color: #6b6b6b;
+    border-radius: 4px;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Estilos para links no cabeçalho */
+header a {
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* Estilos para links no conteúdo da página */
+a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+/* Estilos para os links quando estão sendo hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o main */
+main {
+    background-color: #f5f5f5; /* Cor de fundo */
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+main p {
+    text-align: left; 
+    font-size: 18px;
+    margin-left: 20px;
+    line-height: 1.5;
+    max-width: 2000px;
+}
+
+main img {
+    max-height: 200px;
+}
+
+
+
+/* Tornando a página responsiva */
+@media (max-width: 768px) {
+    nav.slick-carousel {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    nav.slick-carousel a {
+        margin: 10px;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        margin-top: 60px;
+    }
+}
